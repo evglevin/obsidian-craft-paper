@@ -1,0 +1,13 @@
+.theme-light {
+    --background-primary: #F6EEE7;
+    --background-secondary: #F6EEE7;
+    background-color: #F6EEE7;
+}
+
+.theme-light .workspace-ribbon {
+  background-color: #3A8CA7;
+}
+
+.theme-light .workspace-ribbon .clickable-icon {
+  color: #fff;
+}
