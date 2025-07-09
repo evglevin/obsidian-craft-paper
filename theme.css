@@ -23,11 +23,11 @@
 
 /* Left panel */
 .theme-light .workspace-ribbon {
-    background-color: var(--craft-color-blue)
+    background-color: var(--craft-color-blue);
 }
 
 .theme-light .tree-item-self .tree-item-icon {
-    color: var(--craft-color-text)
+    color: var(--craft-color-text);
 }
 
 /* Right panel */
