@@ -1,13 +1,56 @@
+/* Light theme */
 .theme-light {
-    --background-primary: #F6EEE7;
-    --background-secondary: #F6EEE7;
-    background-color: #F6EEE7;
+     --craft-color-paper: #F6EEE7;
+     --craft-color-blue: #3A8CA7;
+     --craft-color-white: #fff;
+     --craft-color-text: oklch(0.3039 0.04 213.68);
+
+     --color-accent: var(--craft-color-blue);
+     --background-primary: var(--craft-color-paper);
+     --background-secondary: var(--craft-color-paper);
+     scrollbar-color:  #888 var(--craft-color-paper);
+
+     --titlebar-background: var(--craft-color-blue); 
+     --titlebar-background-focused: var(--craft-color-blue); 
+    
+     --icon-color: var(--craft-color-white);
+     --icon-color-hover: var(--craft-color-white);
+     --icon-color-active: var(--craft-color-white);
+     --icon-color-focused: var(--craft-color-white);
+     --tab-text-color-focused-active-current: var(--craft-color-text);
+  
 }
 
+/* Left panel */
 .theme-light .workspace-ribbon {
-  background-color: #3A8CA7;
+    background-color: var(--craft-color-blue)
 }
 
-.theme-light .workspace-ribbon .clickable-icon {
-  color: #fff;
+.theme-light .tree-item-self .tree-item-icon {
+    color: var(--craft-color-text)
 }
+
+/* Right panel */
+.theme-light .workspace-tab-header-container {    
+    background-color: var(--craft-color-blue);
+}
+
+.theme-light .view-header .clickable-icon {
+    color: var(--craft-color-text);
+}
+
+.theme-light .workspace-leaf .clickable-icon {
+    color: var(--craft-color-text);
+}
+
+/* Tabs */
+
+
+
+/* Editor */
+.markdown-preview-view,
+.markdown-source-view {
+    color: var(--craft-color-text);
+}
+  
+  
