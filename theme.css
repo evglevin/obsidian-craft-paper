@@ -2,8 +2,10 @@
 .theme-light {
      --craft-color-paper: #FCFCF9;
      --craft-color-blue: #3A8CA7;
-     --craft-color-white: #fff;
+     --craft-color-red: #A84C2F;
      --craft-color-text: oklch(0.3039 0.04 213.68);
+
+     --text-normal: var(--craft-color-text);
 
      --color-accent: var(--craft-color-blue);
      --background-primary: var(--craft-color-paper);
@@ -12,45 +14,40 @@
 
      --titlebar-background: var(--craft-color-blue); 
      --titlebar-background-focused: var(--craft-color-blue); 
-    
-     --icon-color: var(--craft-color-white);
-     --icon-color-hover: var(--craft-color-white);
-     --icon-color-active: var(--craft-color-white);
-     --icon-color-focused: var(--craft-color-white);
-     --tab-text-color-focused-active-current: var(--craft-color-text);
+
+     /* --background-modifier-hover: var(--craft-color-paper); */
   
 }
 
-/* Left panel */
+.clickable-icon,
 .theme-light .workspace-ribbon {
-    background-color: var(--craft-color-blue);
+    --icon-color: var(--craft-color-paper);
+    --ribbon-background: var(--craft-color-blue);
+    --icon-color-hover: var(--craft-color-paper);
+    --icon-color-active: var(--craft-color-paper);
+    --icon-color-focused: var(--craft-color-blue);
 }
 
-.theme-light .tree-item-self .tree-item-icon {
-    color: var(--craft-color-text);
+.theme-light .tree-item-self {
+    --icon-color: var(--craft-color-text);
 }
 
-/* Right panel */
-.theme-light .workspace-tab-header-container {    
-    background-color: var(--craft-color-blue);
+.theme-light .workspace-tab-header {
+    --icon-color: var(--craft-color-paper);
+    --tab-text-color: var(--craft-color-paper);
+    --icon-color-hover: var(--craft-color-paper);
+    --tab-text-color-focused: var(--craft-color-paper);
+    --tab-text-color-focused-active-current: var(--craft-color-text);
 }
 
-.theme-light .view-header .clickable-icon {
-    color: var(--craft-color-text);
+.theme-light .workspace-tab-header.is-active {
+    --background-modifier-hover: var(--craft-color-paper);
 }
 
-.theme-light .workspace-leaf .clickable-icon {
-    color: var(--craft-color-text);
+.theme-light .workspace-tab-header-status-icon {
+    --text-accent: var(--craft-color-red);
 }
 
-/* Tabs */
-
-
-
-/* Editor */
-.markdown-preview-view,
-.markdown-source-view {
-    color: var(--craft-color-text);
+.theme-light .workspace-tabs {
+    --tab-container-background: var(--craft-color-blue);
 }
-  
-  
