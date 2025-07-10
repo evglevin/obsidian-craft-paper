@@ -1,6 +1,6 @@
 /* Light theme */
 .theme-light {
-     --craft-color-paper: #F6EEE7;
+     --craft-color-paper: #FCFCF9;
      --craft-color-blue: #3A8CA7;
      --craft-color-white: #fff;
      --craft-color-text: oklch(0.3039 0.04 213.68);
