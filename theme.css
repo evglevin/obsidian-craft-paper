@@ -19,13 +19,21 @@
   
 }
 
-.clickable-icon,
 .theme-light .workspace-ribbon {
-    --icon-color: var(--craft-color-paper);
     --ribbon-background: var(--craft-color-blue);
+}
+
+.theme-light .sidebar-toggle-button,
+.theme-light .side-dock-actions {
+    --icon-color: var(--craft-color-paper);
     --icon-color-hover: var(--craft-color-paper);
     --icon-color-active: var(--craft-color-paper);
     --icon-color-focused: var(--craft-color-blue);
+}
+
+
+.theme-light .workspace-leaf {
+    --icon-color: var(--craft-color-text);
 }
 
 .theme-light .tree-item-self {
