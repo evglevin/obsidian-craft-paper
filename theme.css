@@ -26,6 +26,7 @@
 
 .theme-light .workspace-ribbon {
     --ribbon-background: var(--craft-color-blue);
+    --ribbon-background-collapsed: var(--craft-color-blue);
 }
 
 .theme-light .sidebar-toggle-button,
