@@ -1,27 +1,29 @@
+body {
+    --accent-h: 195;
+    --accent-s: 48%;
+    --accent-l: 44%;
+}
+
 /* Light theme */
 .theme-light {
-     --craft-color-paper: #FCFCF9;
-     --craft-color-blue: #3A8CA7;
-     --craft-color-red: #A84C2F;
-     --craft-color-text: #13343B;
+    --craft-color-paper: #FCFCF9;
+    --craft-color-blue: #3A8CA7;
+    --craft-color-red: #A84C2F;
+    --craft-color-text: #13343B;
 
-     --accent-h: 195;
-     --accent-s: 48%;
-     --accent-l: 44%;
+    --text-normal: var(--craft-color-text);
 
-     --text-normal: var(--craft-color-text);
+    --background-primary: var(--craft-color-paper);
+    --background-secondary: var(--craft-color-paper);
+    scrollbar-color:  #888 var(--craft-color-paper);
 
-     --background-primary: var(--craft-color-paper);
-     --background-secondary: var(--craft-color-paper);
-     scrollbar-color:  #888 var(--craft-color-paper);
-
-     --titlebar-background: var(--craft-color-blue); 
-     --titlebar-background-focused: var(--craft-color-blue); 
-     
-     --divider-color: var(--craft-color-blue);
-     --divider-color-hover: var(--color-accent-2);
-     --divider-width: 2px;
-     --divider-width-hover: 3px;
+    --titlebar-background: var(--craft-color-blue); 
+    --titlebar-background-focused: var(--craft-color-blue); 
+    
+    --divider-color: var(--craft-color-blue);
+    --divider-color-hover: var(--color-accent-2);
+    --divider-width: 2px;
+    --divider-width-hover: 3px;
 }
 
 .theme-light .workspace-ribbon {
