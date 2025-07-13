@@ -1,3 +1,4 @@
+/* General settings */
 body {
     --accent-h: 195;
     --accent-s: 48%;
@@ -26,44 +27,58 @@ body {
     --divider-width-hover: 3px;
 }
 
+/* Left controls */
 .theme-light .workspace-ribbon {
     --ribbon-background: var(--craft-color-blue);
     --ribbon-background-collapsed: var(--craft-color-blue);
 }
 
+/* Vault switcher */
+.theme-light .workspace-sidedock-vault-profile {
+    --background-secondary: var(--craft-color-blue);
+    --vault-profile-color: var(--craft-color-paper);
+}
+
+/* Icons on blue background */
+.theme-light .workspace-ribbon,
 .theme-light .sidebar-toggle-button,
-.theme-light .side-dock-actions {
+.theme-light .workspace-sidedock-vault-profile,
+.theme-light .workspace-tab-header,
+.theme-light .workspace-tab-header-new-tab,
+.theme-light .workspace-tab-header-tab-list {
     --icon-color: var(--craft-color-paper);
     --icon-color-hover: var(--craft-color-paper);
     --icon-color-active: var(--craft-color-paper);
-    --icon-color-focused: var(--craft-color-blue);
+    --icon-color-focused: var(--color-accent-text);
 }
-
 
 .theme-light .workspace-leaf {
     --icon-color: var(--craft-color-text);
 }
 
+/* Bookmarks */
 .theme-light .tree-item-self {
     --icon-color: var(--craft-color-text);
 }
 
+/* Tabs */
 .theme-light .workspace-tab-header {
-    --icon-color: var(--craft-color-paper);
     --tab-text-color: var(--craft-color-paper);
-    --icon-color-hover: var(--craft-color-paper);
     --tab-text-color-focused: var(--craft-color-paper);
 }
 
+/* Active tab */
 .theme-light .workspace-tab-header.is-active {
     --background-modifier-hover: var(--craft-color-paper);
     --tab-text-color-focused-active-current: var(--craft-color-text);
 }
 
+/* Pin icon on a tab */
 .theme-light .workspace-tab-header-status-icon {
     --text-accent: var(--craft-color-text);
 }
 
+/* Secondary tabs */
 .theme-light .workspace-tabs {
     --tab-container-background: var(--craft-color-blue);
 }
