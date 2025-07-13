@@ -35,8 +35,11 @@ body {
 
 /* Vault switcher */
 .theme-light .workspace-sidedock-vault-profile {
+    --text-faint: var(--craft-color-paper);
+    --text-muted: var(--craft-color-paper);
     --background-secondary: var(--craft-color-blue);
     --vault-profile-color: var(--craft-color-paper);
+    --vault-profile-color-hover: var(--craft-color-paper);
 }
 
 /* Icons on blue background */
