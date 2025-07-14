@@ -26,21 +26,21 @@ body {
 }
 
 /* Rounded corners */
-.workspace-tab-container {
+.theme-light .workspace-tab-container {
     background-color: var(--craft-color-blue);
     padding: 0px 3px 1px 3px;
 }
 
-.workspace-leaf {
+.theme-light .workspace-leaf {
     border-radius: 10px;
 }
 
-.workspace-leaf-resize-handle {
+.theme-light .workspace-leaf-resize-handle {
     border-width: 0px;
     background-color: transparent;
 }
 
-.workspace-leaf-resize-handle:hover {
+.theme-light .workspace-leaf-resize-handle:hover {
     border-width: 0px;
     background-color: transparent;
 }
@@ -103,3 +103,5 @@ body {
 .theme-light .workspace-tabs {
     --tab-container-background: var(--craft-color-blue);
 }
+
+
