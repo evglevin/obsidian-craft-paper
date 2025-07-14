@@ -21,10 +21,28 @@ body {
     --titlebar-background: var(--craft-color-blue); 
     --titlebar-background-focused: var(--craft-color-blue); 
     
-    --divider-color: var(--craft-color-blue);
-    --divider-color-hover: var(--color-accent-2);
-    --divider-width: 2px;
-    --divider-width-hover: 3px;
+    --divider-color: transparent;
+    --divider-color-hover: transparent;
+}
+
+/* Rounded corners */
+.workspace-tab-container {
+    background-color: var(--craft-color-blue);
+    padding: 0px 3px 1px 3px;
+}
+
+.workspace-leaf {
+    border-radius: 10px;
+}
+
+.workspace-leaf-resize-handle {
+    border-width: 0px;
+    background-color: transparent;
+}
+
+.workspace-leaf-resize-handle:hover {
+    border-width: 0px;
+    background-color: transparent;
 }
 
 /* Left controls */
