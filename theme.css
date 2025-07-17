@@ -10,6 +10,7 @@ body {
     --craft-color-paper: #FCFCF9;
     --craft-color-paper-secondary: #F3F3EE;
     --craft-color-blue: #3A8CA7;
+    --craft-color-blue-accent: #aec7d0;
     --craft-color-text: #13343B;
     --craft-color-scroll-bar: #cccccc;
 
@@ -25,6 +26,8 @@ body {
     
     --divider-color: transparent;
     --divider-color-hover: transparent;
+
+    --status-bar-border-color: var(--craft-color-blue) !important;
 }
 
 /* Rounded corners */
@@ -105,6 +108,10 @@ body {
 /* Secondary tabs */
 .theme-light .workspace-tabs {
     --tab-container-background: var(--craft-color-blue);
+}
+
+.status-bar {
+    border-radius: 10px 0 0 0;
 }
 
 
