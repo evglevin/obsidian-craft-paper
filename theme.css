@@ -8,15 +8,17 @@ body {
 /* Light theme */
 .theme-light {
     --craft-color-paper: #FCFCF9;
+    --craft-color-paper-secondary: #F3F3EE;
     --craft-color-blue: #3A8CA7;
-    --craft-color-red: #A84C2F;
     --craft-color-text: #13343B;
+    --craft-color-scroll-bar: #cccccc;
+
 
     --text-normal: var(--craft-color-text);
 
     --background-primary: var(--craft-color-paper);
     --background-secondary: var(--craft-color-paper);
-    scrollbar-color:  #888 var(--craft-color-paper);
+    scrollbar-color:  var(--craft-color-scroll-bar) var(--craft-color-paper);
 
     --titlebar-background: var(--craft-color-blue); 
     --titlebar-background-focused: var(--craft-color-blue); 
@@ -61,7 +63,7 @@ body {
     --vault-profile-color-hover: var(--craft-color-paper);
 }
 
-/* Icons on blue background */
+/* Icons */
 .theme-light .workspace-ribbon,
 .theme-light .sidebar-toggle-button,
 .theme-light .workspace-sidedock-vault-profile,
@@ -97,7 +99,7 @@ body {
 
 /* Pin icon on a tab */
 .theme-light .workspace-tab-header-status-icon {
-    --text-accent: var(--craft-color-text);
+    --text-accent: var(---craft-color-scroll-bar);
 }
 
 /* Secondary tabs */
