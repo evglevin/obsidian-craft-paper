@@ -26,12 +26,13 @@ body {
 }
 
 /* Rounded corners */
-.theme-light .workspace-tab-container {
+.theme-light .workspace-tabs .workspace-leaf  {
     background-color: var(--craft-color-blue);
-    padding: 0px 3px 1px 3px;
+    padding-right: 6px;
 }
 
-.theme-light .workspace-leaf {
+.theme-light .workspace-leaf-content {
+    background-color: var(--craft-color-paper);
     border-radius: 10px;
 }
 
