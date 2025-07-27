@@ -1,15 +1,15 @@
 .theme-light {
-    --craft-color-paper-primary: #FCFCF9;
-    --craft-color-paper-secondary: #F3F3EE;
-    --craft-color-text: #13343B;
-    --craft-color-scroll-bar: #C3C3C3;
+    --color-base-00: #FCFCF9;
+    --color-base-20: #F3F3EE;
+    --color-base-100: #13343B;
+    --scrollbar-thumb-bg: #C3C3C3;
 }
 
 .theme-dark {
-    --craft-color-paper-primary: #191A1A;
-    --craft-color-paper-secondary: #1F2121;
-    --craft-color-text: #C1C1BF;
-    --craft-color-scroll-bar: #939393;
+    --color-base-00: #191A1A;
+    --color-base-20: #1F2121;
+    --color-base-100: #C1C1BF;
+    --scrollbar-thumb-bg: #939393;
 }
 
 body {
@@ -19,15 +19,21 @@ body {
 
     --tab-outline-width: 0px;
 
-    --background-primary: var(--craft-color-paper-primary);
-    --background-secondary: var(--craft-color-paper-secondary);
-    --titlebar-background-focused: var(--craft-color-paper-secondary);
-    --tab-container-background: var(--craft-color-paper-secondary);
-    --ribbon-background-collapsed: var(--craft-color-paper-secondary);
+    --titlebar-background-focused: var(--background-secondary);
+    --ribbon-background-collapsed: var(--background-secondary);
 
-    --text-normal: var(--craft-color-text);
+    scrollbar-color:  var(--scrollbar-thumb-bg) transparent;
 
-    scrollbar-color:  var(--craft-color-scroll-bar) transparent;
+    /* Checklist */
+    --checklist-done-color: var(--text-faint);
+
+    /* Links */
+    --link-decoration: none;
+    --link-external-decoration: none;
+
+    /* Code */
+    --code-background: var(--color-base-20);
+
 }
 
 .workspace-ribbon {
@@ -40,7 +46,7 @@ body {
 }
 
 .workspace-tab-container {
-    background-color: var(--craft-color-paper-secondary);
+    background-color: var(--background-secondary);
 }
 
 .workspace-leaf {
