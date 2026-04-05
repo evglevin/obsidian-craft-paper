@@ -1,117 +1,50 @@
-/* General settings */
-body {
-    --accent-h: 195;
-    --accent-s: 48%;
-    --accent-l: 44%;
-}
-
-/* Light theme */
 .theme-light {
-    --craft-color-paper: #FCFCF9;
-    --craft-color-paper-secondary: #F3F3EE;
-    --craft-color-blue: #3A8CA7;
-    --craft-color-blue-accent: #aec7d0;
-    --craft-color-text: #13343B;
-    --craft-color-scroll-bar: #cccccc;
-
-
-    --text-normal: var(--craft-color-text);
-
-    --background-primary: var(--craft-color-paper);
-    --background-secondary: var(--craft-color-paper);
-    scrollbar-color:  var(--craft-color-scroll-bar) var(--craft-color-paper);
-
-    --titlebar-background: var(--craft-color-blue); 
-    --titlebar-background-focused: var(--craft-color-blue); 
-    
-    --divider-color: transparent;
-    --divider-color-hover: transparent;
-
-    --status-bar-border-color: var(--craft-color-blue) !important;
+  --color-base-00: #fcfcf9;
+  --color-base-20: #f3f3ee;
+  --color-base-100: #13343b;
+  --scrollbar-thumb-bg: #c3c3c3;
 }
 
-/* Rounded corners */
-.theme-light .workspace-tabs .workspace-leaf  {
-    background-color: var(--craft-color-blue);
-    padding-right: 6px;
+.theme-dark {
+  --color-base-00: #191a1a;
+  --color-base-20: #1f2121;
+  --color-base-100: #c1c1bf;
+  --scrollbar-thumb-bg: #3d3d3b;
 }
 
-.theme-light .workspace-leaf-content {
-    background-color: var(--craft-color-paper);
-    border-radius: 10px;
+body {
+  --accent-h: 195;
+  --accent-s: 48%;
+  --accent-l: 44%;
+
+  --titlebar-background-focused: var(--background-secondary);
+  --ribbon-background-collapsed: var(--background-secondary);
+
+  scrollbar-color: var(--scrollbar-thumb-bg) transparent;
+
+  /* Checklist */
+  --checklist-done-color: var(--text-faint);
+
+  /* Links */
+  --link-decoration: none;
+  --link-external-decoration: none;
+
+  /* Code */
+  --code-background: var(--color-base-20);
 }
 
-.theme-light .workspace-leaf-resize-handle {
-    border-width: 0px;
-    background-color: transparent;
+.workspace-tab-container {
+  background-color: var(--background-secondary);
 }
 
-.theme-light .workspace-leaf-resize-handle:hover {
-    border-width: 0px;
-    background-color: transparent;
+/* Viewport width */
+.view-content {
+  container-type: inline-size;
 }
 
-/* Left controls */
-.theme-light .workspace-ribbon {
-    --ribbon-background: var(--craft-color-blue);
-    --ribbon-background-collapsed: var(--craft-color-blue);
+@container (min-width: 900px) {
+  .cm-sizer,
+  .markdown-preview-sizer {
+    --file-line-width: 900px;
+  }
 }
-
-/* Vault switcher */
-.theme-light .workspace-sidedock-vault-profile {
-    --text-faint: var(--craft-color-paper);
-    --text-muted: var(--craft-color-paper);
-    --background-secondary: var(--craft-color-blue);
-    --vault-profile-color: var(--craft-color-paper);
-    --vault-profile-color-hover: var(--craft-color-paper);
-}
-
-/* Icons */
-.theme-light .workspace-ribbon,
-.theme-light .sidebar-toggle-button,
-.theme-light .workspace-sidedock-vault-profile,
-.theme-light .workspace-tab-header,
-.theme-light .workspace-tab-header-new-tab,
-.theme-light .workspace-tab-header-tab-list {
-    --icon-color: var(--craft-color-paper);
-    --icon-color-hover: var(--craft-color-paper);
-    --icon-color-active: var(--craft-color-paper);
-    --icon-color-focused: var(--color-accent-text);
-}
-
-.theme-light .workspace-leaf {
-    --icon-color: var(--craft-color-text);
-}
-
-/* Bookmarks */
-.theme-light .tree-item-self {
-    --icon-color: var(--craft-color-text);
-}
-
-/* Tabs */
-.theme-light .workspace-tab-header {
-    --tab-text-color: var(--craft-color-paper);
-    --tab-text-color-focused: var(--craft-color-paper);
-}
-
-/* Active tab */
-.theme-light .workspace-tab-header.is-active {
-    --background-modifier-hover: var(--craft-color-paper);
-    --tab-text-color-focused-active-current: var(--craft-color-text);
-}
-
-/* Pin icon on a tab */
-.theme-light .workspace-tab-header-status-icon {
-    --text-accent: var(---craft-color-scroll-bar);
-}
-
-/* Secondary tabs */
-.theme-light .workspace-tabs {
-    --tab-container-background: var(--craft-color-blue);
-}
-
-.status-bar {
-    border-radius: 10px 0 0 0;
-}
-
-
