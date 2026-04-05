@@ -1,53 +1,50 @@
 .theme-light {
-    --color-base-00: #FCFCF9;
-    --color-base-20: #F3F3EE;
-    --color-base-100: #13343B;
-    --scrollbar-thumb-bg: #C3C3C3;
+  --color-base-00: #fcfcf9;
+  --color-base-20: #f3f3ee;
+  --color-base-100: #13343b;
+  --scrollbar-thumb-bg: #c3c3c3;
 }
 
 .theme-dark {
-    --color-base-00: #191A1A;
-    --color-base-20: #1F2121;
-    --color-base-100: #C1C1BF;
-    --scrollbar-thumb-bg: #3D3D3B;
+  --color-base-00: #191a1a;
+  --color-base-20: #1f2121;
+  --color-base-100: #c1c1bf;
+  --scrollbar-thumb-bg: #3d3d3b;
 }
 
 body {
-    --accent-h: 195;
-    --accent-s: 48%;
-    --accent-l: 44%;
+  --accent-h: 195;
+  --accent-s: 48%;
+  --accent-l: 44%;
 
-    --tab-outline-width: 0px;
+  --titlebar-background-focused: var(--background-secondary);
+  --ribbon-background-collapsed: var(--background-secondary);
 
-    --titlebar-background-focused: var(--background-secondary);
-    --ribbon-background-collapsed: var(--background-secondary);
+  scrollbar-color: var(--scrollbar-thumb-bg) transparent;
 
-    scrollbar-color:  var(--scrollbar-thumb-bg) transparent;
+  /* Checklist */
+  --checklist-done-color: var(--text-faint);
 
-    /* Checklist */
-    --checklist-done-color: var(--text-faint);
+  /* Links */
+  --link-decoration: none;
+  --link-external-decoration: none;
 
-    /* Links */
-    --link-decoration: none;
-    --link-external-decoration: none;
-
-    /* Code */
-    --code-background: var(--color-base-20);
-}
-
-.workspace-ribbon {
-    --divider-width: 0px;
-}
-
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
-.workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-    --divider-width: 0px;
+  /* Code */
+  --code-background: var(--color-base-20);
 }
 
 .workspace-tab-container {
-    background-color: var(--background-secondary);
+  background-color: var(--background-secondary);
 }
 
-.workspace-leaf {
-    border-radius: 10px;
+/* Viewport width */
+.view-content {
+  container-type: inline-size;
+}
+
+@container (min-width: 900px) {
+  .cm-sizer,
+  .markdown-preview-sizer {
+    --file-line-width: 900px;
+  }
 }
